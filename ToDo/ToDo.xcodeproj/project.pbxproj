@@ -23,6 +23,7 @@
 		B1DED648286CE5D600E60A4F /* LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DED647286CE5D600E60A4F /* LocationTests.swift */; };
 		E8270F8028848E8800F01AEE /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8270F7F28848E8800F01AEE /* ItemListDataProviderTests.swift */; };
 		E8270F8228849B8C00F01AEE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8270F8128849B8C00F01AEE /* ItemCell.swift */; };
+		E89908BA28878CB400664541 /* ItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89908B928878CB400664541 /* ItemCellTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B1DED647286CE5D600E60A4F /* LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTests.swift; sourceTree = "<group>"; };
 		E8270F7F28848E8800F01AEE /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
 		E8270F8128849B8C00F01AEE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		E89908B928878CB400664541 /* ItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				B1DED649286CE7DD00E60A4F /* Model */,
 				B10393D528737E430036BDF5 /* ItemListViewControllerTests.swift */,
 				E8270F7F28848E8800F01AEE /* ItemListDataProviderTests.swift */,
+				E89908B928878CB400664541 /* ItemCellTests.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89908BA28878CB400664541 /* ItemCellTests.swift in Sources */,
 				E8270F8028848E8800F01AEE /* ItemListDataProviderTests.swift in Sources */,
 				B1DED643286C973500E60A4F /* ItemManagerTests.swift in Sources */,
 				B1DED648286CE5D600E60A4F /* LocationTests.swift in Sources */,
