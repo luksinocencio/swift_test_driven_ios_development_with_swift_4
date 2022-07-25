@@ -20,7 +20,7 @@ final class ItemCellTests: XCTestCase {
         let dataSource = FakeDataSource()
         tableView?.dataSource = dataSource
         
-        cell = tableView?.dequeueReusableCell(withIdentifier: "ItemCell", for: IndexPath(row: 0, section: 0)) as! ItemCell
+        cell = tableView?.dequeueReusableCell(withIdentifier: "ItemCell", for: IndexPath(row: 0, section: 0)) as? ItemCell
     }
     
     func test_HasNameLabel() {

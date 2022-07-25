@@ -24,6 +24,14 @@
 		E8270F8028848E8800F01AEE /* ItemListDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8270F7F28848E8800F01AEE /* ItemListDataProviderTests.swift */; };
 		E8270F8228849B8C00F01AEE /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8270F8128849B8C00F01AEE /* ItemCell.swift */; };
 		E89908BA28878CB400664541 /* ItemCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89908B928878CB400664541 /* ItemCellTests.swift */; };
+		E89908BC28879D5900664541 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89908BB28879D5900664541 /* DetailViewController.swift */; };
+		E89908BE28879D8400664541 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89908BD28879D8400664541 /* DetailViewControllerTests.swift */; };
+		E89908C22887A8E100664541 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89908C12887A8E100664541 /* InputViewController.swift */; };
+		E89908C42887A93F00664541 /* InputViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89908C32887A93F00664541 /* InputViewControllerTests.swift */; };
+		E8A7A155288E0BCD00EF13E9 /* APIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A7A154288E0BCD00EF13E9 /* APIClientTests.swift */; };
+		E8A7A157288E0C2100EF13E9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A7A156288E0C2100EF13E9 /* APIClient.swift */; };
+		E8A7A159288E120700EF13E9 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A7A158288E120700EF13E9 /* Token.swift */; };
+		E8A7A15B288E328100EF13E9 /* StoryboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8A7A15A288E328100EF13E9 /* StoryboardTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,14 @@
 		E8270F7F28848E8800F01AEE /* ItemListDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDataProviderTests.swift; sourceTree = "<group>"; };
 		E8270F8128849B8C00F01AEE /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		E89908B928878CB400664541 /* ItemCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellTests.swift; sourceTree = "<group>"; };
+		E89908BB28879D5900664541 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E89908BD28879D8400664541 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		E89908C12887A8E100664541 /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		E89908C32887A93F00664541 /* InputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewControllerTests.swift; sourceTree = "<group>"; };
+		E8A7A154288E0BCD00EF13E9 /* APIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientTests.swift; sourceTree = "<group>"; };
+		E8A7A156288E0C2100EF13E9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E8A7A158288E120700EF13E9 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		E8A7A15A288E328100EF13E9 /* StoryboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +114,11 @@
 		B11D6D12286C80180093976E /* ToDo */ = {
 			isa = PBXGroup;
 			children = (
-				B1DED64B286CE80800E60A4F /* Supporting Files */,
+				E89908BF28879D8C00664541 /* Controller */,
 				B11D6D19286C80180093976E /* Main.storyboard */,
 				B1DED646286CE59A00E60A4F /* Model */,
-				B10393D328737DAD0036BDF5 /* ItemListViewController.swift */,
-				B10393D7287385460036BDF5 /* ItemListProvider.swift */,
-				E8270F8128849B8C00F01AEE /* ItemCell.swift */,
+				E8A7A15C288E32BB00EF13E9 /* Services */,
+				B1DED64B286CE80800E60A4F /* Supporting Files */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -111,10 +126,10 @@
 		B11D6D2E286C81160093976E /* ToDoTests */ = {
 			isa = PBXGroup;
 			children = (
+				E8A7A15D288E32DA00EF13E9 /* Services */,
+				E89908C028879D9800664541 /* Controller */,
 				B1DED649286CE7DD00E60A4F /* Model */,
-				B10393D528737E430036BDF5 /* ItemListViewControllerTests.swift */,
-				E8270F7F28848E8800F01AEE /* ItemListDataProviderTests.swift */,
-				E89908B928878CB400664541 /* ItemCellTests.swift */,
+				E8A7A15A288E328100EF13E9 /* StoryboardTests.swift */,
 			);
 			path = ToDoTests;
 			sourceTree = "<group>";
@@ -122,6 +137,7 @@
 		B1DED646286CE59A00E60A4F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E8A7A158288E120700EF13E9 /* Token.swift */,
 				B11D6D27286C80320093976E /* ToDoItem.swift */,
 				B1DED640286C906900E60A4F /* Location.swift */,
 				B1DED644286C976C00E60A4F /* ItemManager.swift */,
@@ -149,6 +165,46 @@
 				B11D6D21286C80190093976E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E89908BF28879D8C00664541 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B10393D7287385460036BDF5 /* ItemListProvider.swift */,
+				E8270F8128849B8C00F01AEE /* ItemCell.swift */,
+				B10393D328737DAD0036BDF5 /* ItemListViewController.swift */,
+				E89908BB28879D5900664541 /* DetailViewController.swift */,
+				E89908C12887A8E100664541 /* InputViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E89908C028879D9800664541 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E8270F7F28848E8800F01AEE /* ItemListDataProviderTests.swift */,
+				E89908B928878CB400664541 /* ItemCellTests.swift */,
+				B10393D528737E430036BDF5 /* ItemListViewControllerTests.swift */,
+				E89908BD28879D8400664541 /* DetailViewControllerTests.swift */,
+				E89908C32887A93F00664541 /* InputViewControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E8A7A15C288E32BB00EF13E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E8A7A156288E0C2100EF13E9 /* APIClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E8A7A15D288E32DA00EF13E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E8A7A154288E0BCD00EF13E9 /* APIClientTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,9 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E89908BC28879D5900664541 /* DetailViewController.swift in Sources */,
+				E89908C22887A8E100664541 /* InputViewController.swift in Sources */,
 				B10393D428737DAD0036BDF5 /* ItemListViewController.swift in Sources */,
+				E8A7A159288E120700EF13E9 /* Token.swift in Sources */,
 				E8270F8228849B8C00F01AEE /* ItemCell.swift in Sources */,
 				B11D6D14286C80180093976E /* AppDelegate.swift in Sources */,
+				E8A7A157288E0C2100EF13E9 /* APIClient.swift in Sources */,
 				B1DED641286C906900E60A4F /* Location.swift in Sources */,
 				B11D6D28286C80320093976E /* ToDoItem.swift in Sources */,
 				B1DED645286C976C00E60A4F /* ItemManager.swift in Sources */,
@@ -271,7 +331,11 @@
 				E89908BA28878CB400664541 /* ItemCellTests.swift in Sources */,
 				E8270F8028848E8800F01AEE /* ItemListDataProviderTests.swift in Sources */,
 				B1DED643286C973500E60A4F /* ItemManagerTests.swift in Sources */,
+				E89908C42887A93F00664541 /* InputViewControllerTests.swift in Sources */,
 				B1DED648286CE5D600E60A4F /* LocationTests.swift in Sources */,
+				E89908BE28879D8400664541 /* DetailViewControllerTests.swift in Sources */,
+				E8A7A15B288E328100EF13E9 /* StoryboardTests.swift in Sources */,
+				E8A7A155288E0BCD00EF13E9 /* APIClientTests.swift in Sources */,
 				B11D6D37286C81470093976E /* ToDoItemTests.swift in Sources */,
 				B10393D628737E430036BDF5 /* ItemListViewControllerTests.swift in Sources */,
 			);
