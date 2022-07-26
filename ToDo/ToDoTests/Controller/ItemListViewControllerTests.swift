@@ -44,6 +44,7 @@ class ItemListViewControllerTests: XCTestCase {
         XCTAssertNil(sut.presentedViewController)
         
         UIApplication.shared.keyWindow?.rootViewController = sut
+        
         guard let addButton = sut.navigationItem.rightBarButtonItem else { XCTFail(); return }
         guard let action = addButton.action else { XCTFail(); return }
         
