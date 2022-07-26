@@ -28,13 +28,14 @@ final class InputViewControllerTests: XCTestCase {
     
     func test_Save_UsesGeocoderToGetCoordinateFromAddress() {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MM/dd/yyyy"
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        dateFormatter.locale = Locale(identifier: "en_US")
         
         let timestamp = 1456095600.0
         let date = Date(timeIntervalSince1970: timestamp)
         
         sut.titleTextField.text = "Foo"
-//        sut.dateTextField.text = dateFormatter.string(from: date)
+        sut.dateTextField.text = dateFormatter.string(from: date)
         sut.locationTextField.text = "Bar"
         sut.addressTextField.text = "Infinite Loop 1, Cupertino"
         sut.descriptionTextField.text = "Baz"
@@ -56,7 +57,7 @@ final class InputViewControllerTests: XCTestCase {
         let testItem = ToDoItem(
             title: "Foo",
             itemDescription: "Baz",
-//            timestamp: timestamp,
+            timestamp: timestamp,
             location: Location(name: "Bar", coordinate: coordinate)
         )
         
@@ -84,8 +85,8 @@ final class InputViewControllerTests: XCTestCase {
                 return
             }
             
-            XCTAssertEqualWithAccuracy(latitude, 37.3316, accuracy: 0.001)
-            XCTAssertEqualWithAccuracy(longitude, -122.0300, accuracy: 0.001)
+            XCTAssertEqual(latitude, 37.3316, accuracy: 0.001)
+            XCTAssertEqual(longitude, -122.0300, accuracy: 0.001)
             
             geocoderAnswered.fulfill()
         }
